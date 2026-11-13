@@ -1,0 +1,92 @@
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	u4/U755/A2 u4/U755/Y u4/U756/A2 u4/U756/Y u4/U761/A2 u4/U761/Y u4/U766/A1 u4/U766/Y u4/U767/A u4/U767/Y u4/U73/A u4/U73/Y u4/U935/A1 u4/U935/Y u4/U57/A u4/U57/Y u4/U1353/A3 u4/U1353/Y u4/U1355/A1 u4/U1355/Y u4/U1364/A1 u4/U1364/Y u4/U1383/A1 u4/U1383/Y u4/U1400/A1 u4/U1400/Y u4/U1424/A1 u4/U1424/Y u4/U1441/A1 u4/U1441/Y u4/U1460/A1 u4/U1460/Y u4/U1479/A1 u4/U1479/Y u4/U1496/A1 u4/U1496/Y u4/U1513/A1 u4/U1513/Y u4/U1530/A1 u4/U1530/Y u4/U1545/A1 u4/U1545/Y u4/U1567/A1 u4/U1567/Y u4/U14/A u4/U14/Y u4/U1520/A2 u4/U1520/Y u4/U491/A1 u4/U491/Y u4/U493/A1 u4/U493/Y u4/U495/A1 u4/U495/Y u4/U583/A1 u4/U583/Y u4/U739/A1 u4/U739/Y 
+Information: Timing loop detected. (OPT-150)
+	u4/U76/A u4/U76/Y u4/U747/A2 u4/U747/Y u4/U748/A1 u4/U748/Y u4/U751/A2 u4/U751/Y u4/U763/A1 u4/U763/Y u4/U766/A2 u4/U766/Y u4/U767/A u4/U767/Y u4/U73/A u4/U73/Y u4/U935/A1 u4/U935/Y u4/U57/A u4/U57/Y u4/U1353/A3 u4/U1353/Y u4/U1355/A1 u4/U1355/Y u4/U1364/A1 u4/U1364/Y u4/U1383/A1 u4/U1383/Y u4/U1400/A1 u4/U1400/Y u4/U1424/A1 u4/U1424/Y u4/U1441/A1 u4/U1441/Y u4/U1460/A1 u4/U1460/Y u4/U1479/A1 u4/U1479/Y u4/U1496/A1 u4/U1496/Y u4/U1513/A1 u4/U1513/Y u4/U1530/A1 u4/U1530/Y u4/U1545/A1 u4/U1545/Y u4/U1567/A1 u4/U1567/Y u4/U14/A u4/U14/Y u4/U1520/A2 u4/U1520/Y u4/U491/A1 u4/U491/Y u4/U493/A1 u4/U493/Y u4/U495/A1 u4/U495/Y u4/U583/A1 u4/U583/Y u4/U739/A1 u4/U739/Y 
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'u4/U1520'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'u4/U1520'
+         to break a timing loop. (OPT-314)
+ 
+****************************************
+Report : qor
+Design : fpu
+Version: W-2024.09-SP5-4
+Date   : Sun Nov  8 22:03:50 2026
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:             201.00
+  Critical Path Length:         35.61
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     36.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:        110
+  Leaf Cell Count:              48897
+  Buf/Inv Cell Count:            9845
+  Buf Cell Count:                 421
+  Inv Cell Count:                9424
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     48242
+  Sequential Cell Count:          655
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   108900.703834
+  Noncombinational Area:  4265.553027
+  Buf/Inv Area:          13104.935438
+  Total Buffer Area:           933.98
+  Total Inverter Area:       12170.96
+  Macro/Black Box Area:      0.000000
+  Net Area:              45421.383797
+  -----------------------------------
+  Cell Area:            113166.256861
+  Design Area:          158587.640658
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         49502
+  Nets With Violations:             1
+  Max Trans Violations:             1
+  Max Cap Violations:               1
+  -----------------------------------
+
+
+  Hostname: bender.engr.ucr.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    8.15
+  Logic Optimization:               1476.71
+  Mapping Optimization:             2987.64
+  -----------------------------------------
+  Overall Compile Time:             4782.65
+  Overall Compile Wall Clock Time:  4805.68
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

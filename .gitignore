@@ -1,2 +1,20 @@
 __pycache__/
 *.pyc
+
+# simulation / tool outputs (regenerate with scripts/)
+sim/
+*.vcd
+*.vvp
+simv*
+csrc/
+ucli.key
+DVEfiles/
+*.daidir
+command.log
+default.svf
+filenames.log
+
+# large synthesis outputs kept on Bender only (regenerate with scripts/syn.sh)
+synthesis/logs/
+synthesis/*_p*/*_netlist.v
+*.sdf

@@ -1,0 +1,86 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : fpu_bf16_wrapper
+Version: V-2023.12-SP5-4
+Date   : Sun Nov  8 21:26:11 2026
+****************************************
+
+
+  Startpoint: u_native_div_opa_r_reg_7_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_native_div_stage2_reg_4_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_native_div_opa_r_reg_7_/CLK (DFFX1_RVT)               0.00       0.00 r
+  u_native_div_opa_r_reg_7_/QN (DFFX1_RVT)                0.32       0.32 r
+  U1470/Y (NAND4X0_RVT)                                   0.18       0.50 f
+  U1507/Y (NOR3X0_RVT)                                    0.35       0.85 r
+  U3251/Y (AND2X1_RVT)                                    0.18       1.03 r
+  U3250/Y (INVX2_RVT)                                     0.07       1.10 f
+  U1431/Y (INVX1_RVT)                                     0.08       1.18 r
+  U1425/Y (INVX1_RVT)                                     0.08       1.26 f
+  U3495/Y (MUX21X1_RVT)                                   0.26       1.53 f
+  U1841/Y (OA21X1_RVT)                                    0.24       1.77 f
+  U1551/Y (INVX1_RVT)                                     0.10       1.87 r
+  U2849/Y (AOI22X1_RVT)                                   0.25       2.12 f
+  U3237/Y (AND2X1_RVT)                                    0.12       2.24 f
+  U2528/Y (AO21X1_RVT)                                    0.24       2.48 f
+  U2526/Y (INVX2_RVT)                                     0.11       2.59 r
+  U1514/Y (INVX1_RVT)                                     0.06       2.65 f
+  U2144/Y (NOR2X0_RVT)                                    0.18       2.83 r
+  U1365/Y (AO21X1_RVT)                                    0.19       3.01 r
+  U1670/Y (INVX4_RVT)                                     0.13       3.15 f
+  U1492/Y (INVX8_RVT)                                     0.14       3.29 r
+  U1619/Y (XNOR2X1_RVT)                                   0.33       3.61 f
+  U4274/Y (OAI22X1_RVT)                                   0.27       3.88 r
+  U4285/CO (FADDX1_RVT)                                   0.22       4.11 r
+  U4293/CO (FADDX1_RVT)                                   0.28       4.39 r
+  U3090/Y (XNOR3X1_RVT)                                   0.50       4.89 r
+  U3236/Y (AND2X1_RVT)                                    0.16       5.05 r
+  U3088/Y (AO21X1_RVT)                                    0.12       5.17 r
+  U3224/Y (OR3X1_RVT)                                     0.17       5.34 r
+  U2678/Y (NAND3X0_RVT)                                   0.15       5.49 f
+  U1511/Y (AO21X1_RVT)                                    0.27       5.77 f
+  U1510/Y (INVX2_RVT)                                     0.11       5.87 r
+  U4429/Y (OA21X1_RVT)                                    0.19       6.06 r
+  U1310/Y (XNOR2X1_RVT)                                   0.26       6.32 f
+  U4431/Y (AO222X1_RVT)                                   0.29       6.62 f
+  U3372/Y (NAND2X0_RVT)                                   0.10       6.72 r
+  U4432/Y (NAND3X0_RVT)                                   0.12       6.84 f
+  U2790/Y (AND2X1_RVT)                                    0.18       7.02 f
+  U1709/Y (INVX2_RVT)                                     0.07       7.10 r
+  U2915/Y (AO21X1_RVT)                                    0.12       7.21 r
+  U2631/Y (AND2X1_RVT)                                    0.13       7.34 r
+  U2630/Y (AO22X1_RVT)                                    0.18       7.53 r
+  U1459/Y (OR2X2_RVT)                                     0.17       7.70 r
+  U1462/Y (XNOR2X2_RVT)                                   0.21       7.91 f
+  U2848/Y (OA21X1_RVT)                                    0.18       8.09 f
+  U2847/Y (INVX1_RVT)                                     0.06       8.15 r
+  u_native_div_stage2_reg_4_/D (DFFX1_RVT)                0.00       8.15 r
+  data arrival time                                                  8.15
+
+  clock clk (rise edge)                                   8.50       8.50
+  clock network delay (ideal)                             0.00       8.50
+  clock reconvergence pessimism                           0.00       8.50
+  clock uncertainty                                      -0.20       8.30
+  u_native_div_stage2_reg_4_/CLK (DFFX1_RVT)                         8.30 r
+  library setup time                                     -0.15       8.15
+  data required time                                                 8.15
+  ------------------------------------------------------------------------------
+  data required time                                                 8.15
+  data arrival time                                                 -8.15
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

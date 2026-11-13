@@ -1,0 +1,28 @@
+00 00000000 80000000 00000000 2  // D01 +0 + -0 = +0 (RNE)
+10 7f800000 7f800000 7fc00000 4  // D02 +inf - +inf = qNaN (invalid)
+30 3f800000 00000000 7f800000 9  // D03 1.0 / +0 = +inf, div_by_zero
+30 00000000 00000000 7fc00000 4  // D04 0 / 0 = qNaN (invalid)
+20 7f7fffff 40000000 7f800000 8  // D05 MAX * 2 = +inf (RNE overflow)
+21 7f7fffff 40000000 7f7fffff 0  // D06 MAX * 2 = MAX (RTZ overflow)
+00 3f800000 33800000 3f800000 0  // D07 1 + 2^-24 tie -> 1.0 (RNE)
+02 3f800000 33800000 3f800001 0  // D08 1 + 2^-24 -> 1+ulp (round up)
+13 bf800000 33800000 bf800001 0  // D09 -1 - 2^-24 -> -(1+ulp) (round dn)
+20 7fc00000 40400000 7fc00000 4  // D10 qNaN propagation through mul
+20 7f800000 00000000 7fc00000 4  // D11 inf * 0 = qNaN (invalid)
+13 3fc00000 3fc00000 80000000 2  // D12 x - x = +0, -0 in round-down
+00 c81dd325 47ba351d c781712d 0  // R01 random add RNE
+10 b9337517 3d9bfb35 bd9c54f0 0  // R02 random sub RNE
+20 471e2d5a bf94fb24 c7381ac9 0  // R03 random mul RNE
+30 3d315964 43031642 39ad2c3e 0  // R04 random div RNE
+01 c35502e2 3287a891 c35502e1 0  // R05 random add RTZ
+11 c7438897 3a00eaae c7438897 0  // R06 random sub RTZ
+21 3a8ad7db cc175063 c72421d6 0  // R07 random mul RTZ
+31 b1598788 b7a96fe5 392454bc 0  // R08 random div RTZ
+02 c4a98667 b34ab493 c4a98667 0  // R09 random add RUP
+12 cb438954 411758ac cb43895d 0  // R10 random sub RUP
+22 31711664 b0f1a2b1 a2e38f4a 0  // R11 random mul RUP
+32 b2c8954f bd2fca56 35120d7d 0  // R12 random div RUP
+03 cdfe9752 402394aa cdfe9752 0  // R13 random add RDN
+13 be14d865 bce10b37 bdf16dfd 0  // R14 random sub RDN
+23 c90ad9d1 394228d1 c2d29e68 0  // R15 random mul RDN
+33 c3fe6189 c164407d 420ea71c 0  // R16 random div RDN

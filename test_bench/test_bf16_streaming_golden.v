@@ -6,7 +6,14 @@
 // Run from the repository root so the golden-vector path resolves.
 module test_bf16_streaming_golden;
     reg clk = 0;
-    always #5 clk = ~clk;
+    // PERIOD can be overridden for gate-level runs; +VCD=<file> dumps the DUT for PrimeTime.
+    parameter real PERIOD = 10.0;
+    always #(PERIOD/2.0) clk = ~clk;
+    reg [8*256-1:0] vcdfile;
+    initial if ($value$plusargs("VCD=%s", vcdfile)) begin
+        $dumpfile(vcdfile);
+        $dumpvars(0, test_bf16_streaming_golden.dut);
+    end
 
     reg [1:0] rmode = 0;
     reg [2:0] fpu_op = 0;

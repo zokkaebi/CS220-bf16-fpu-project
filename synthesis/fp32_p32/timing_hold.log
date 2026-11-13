@@ -1,0 +1,180 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 5
+Design : fpu
+Version: W-2024.09-SP5-4
+Date   : Sun Nov  8 22:51:44 2026
+****************************************
+
+Operating Conditions: ss0p7v125c   Library: saed32rvt_ss0p7v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: fpu_op_r1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u1/add_r_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                140000                saed32rvt_ss0p7v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fpu_op_r1_reg[0]/CLK (DFFX1_RVT)         0.00       0.00 r
+  fpu_op_r1_reg[0]/QN (DFFX1_RVT)          0.25       0.25 f
+  u1/add_r_reg/D (DFFX1_RVT)               0.00       0.25 f
+  data arrival time                                   0.25
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.20       0.20
+  u1/add_r_reg/CLK (DFFX1_RVT)             0.00       0.20 r
+  library hold time                       -0.08       0.12
+  data required time                                  0.12
+  -----------------------------------------------------------
+  data required time                                  0.12
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.13
+
+
+  Startpoint: u1/add_r_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fpu_op_r3_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                140000                saed32rvt_ss0p7v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u1/add_r_reg/CLK (DFFX1_RVT)             0.00       0.00 r
+  u1/add_r_reg/QN (DFFX1_RVT)              0.27       0.27 f
+  fpu_op_r3_reg[0]/D (DFFX1_RVT)           0.00       0.27 f
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.20       0.20
+  fpu_op_r3_reg[0]/CLK (DFFX1_RVT)         0.00       0.20 r
+  library hold time                       -0.09       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.15
+
+
+  Startpoint: opa_r_reg[29]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: opa_r1_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                140000                saed32rvt_ss0p7v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  opa_r_reg[29]/CLK (DFFSSRX2_RVT)         0.00       0.00 r
+  opa_r_reg[29]/QN (DFFSSRX2_RVT)          0.28       0.28 r
+  opa_r1_reg[29]/D (DFFX1_RVT)             0.00       0.28 r
+  data arrival time                                   0.28
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.20       0.20
+  opa_r1_reg[29]/CLK (DFFX1_RVT)           0.00       0.20 r
+  library hold time                       -0.08       0.12
+  data required time                                  0.12
+  -----------------------------------------------------------
+  data required time                                  0.12
+  data arrival time                                  -0.28
+  -----------------------------------------------------------
+  slack (MET)                                         0.17
+
+
+  Startpoint: div_opa_ldz_r1_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: div_opa_ldz_r2_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                140000                saed32rvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  div_opa_ldz_r1_reg[1]/CLK (DFFX1_RVT)                   0.00       0.00 r
+  div_opa_ldz_r1_reg[1]/Q (DFFX1_RVT)                     0.33       0.33 f
+  div_opa_ldz_r2_reg[1]/D (DFFX1_RVT)                     0.00       0.33 f
+  data arrival time                                                  0.33
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  div_opa_ldz_r2_reg[1]/CLK (DFFX1_RVT)                   0.00       0.20 r
+  library hold time                                      -0.05       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: div_opa_ldz_r1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: div_opa_ldz_r2_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                140000                saed32rvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  div_opa_ldz_r1_reg[0]/CLK (DFFX1_RVT)                   0.00       0.00 r
+  div_opa_ldz_r1_reg[0]/Q (DFFX1_RVT)                     0.33       0.33 f
+  div_opa_ldz_r2_reg[0]/D (DFFX1_RVT)                     0.00       0.33 f
+  data arrival time                                                  0.33
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  div_opa_ldz_r2_reg[0]/CLK (DFFX1_RVT)                   0.00       0.20 r
+  library hold time                                      -0.05       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+1

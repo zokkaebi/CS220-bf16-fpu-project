@@ -1,0 +1,91 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : fpu_bf16_wrapper
+Version: W-2024.09-SP5-4
+Date   : Sun Nov  8 20:59:10 2026
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   u_native_div/stage2_reg[12]/D
+                                7.61           7.70 f        -0.09  (VIOLATED)
+   u_native_div/stage2_reg[9]/D
+                                7.63           7.72 f        -0.09  (VIOLATED)
+   u_native_div/stage2_reg[13]/D
+                                7.63           7.72 f        -0.09  (VIOLATED)
+   u_native_div/stage2_reg[11]/D
+                                7.60           7.68 f        -0.08  (VIOLATED)
+   u_native_div/stage2_reg[18]/D
+                                7.63           7.71 f        -0.08  (VIOLATED)
+   u_native_div/stage2_reg[5]/D
+                                7.60           7.68 f        -0.08  (VIOLATED)
+   u_native_div/stage2_reg[8]/D
+                                7.61           7.68 f        -0.07  (VIOLATED)
+   u_native_div/stage2_reg[6]/D
+                                7.62           7.69 f        -0.07  (VIOLATED)
+   u_native_div/stage2_reg[1]/D
+                                7.63           7.70 f        -0.07  (VIOLATED)
+   u_native_div/stage2_reg[3]/D
+                                7.63           7.70 f        -0.07  (VIOLATED)
+   u_native_div/stage2_reg[10]/D
+                                7.63           7.70 f        -0.07  (VIOLATED)
+   u_native_div/stage2_reg[2]/D
+                                7.63           7.70 f        -0.07  (VIOLATED)
+   u_native_mul/stage2_reg[0]/D
+                                7.65           7.72 r        -0.06  (VIOLATED)
+   u_native_mul/stage2_reg[1]/D
+                                7.65           7.72 r        -0.06  (VIOLATED)
+   u_native_mul/stage2_reg[2]/D
+                                7.65           7.72 r        -0.06  (VIOLATED)
+   u_native_mul/stage2_reg[4]/D
+                                7.65           7.72 r        -0.06  (VIOLATED)
+   u_native_mul/stage2_reg[5]/D
+                                7.65           7.72 r        -0.06  (VIOLATED)
+   u_native_mul/stage2_reg[6]/D
+                                7.65           7.72 r        -0.06  (VIOLATED)
+   u_native_mul/stage2_reg[3]/D
+                                7.64           7.68 f        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[10]/D
+                                7.65           7.69 r        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[12]/D
+                                7.65           7.69 r        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[13]/D
+                                7.65           7.69 r        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[14]/D
+                                7.65           7.69 r        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[9]/D
+                                7.65           7.69 r        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[11]/D
+                                7.65           7.69 r        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[8]/D
+                                7.65           7.69 r        -0.04  (VIOLATED)
+   u_native_div/stage2_reg[7]/D
+                                7.61           7.65 f        -0.04  (VIOLATED)
+   u_native_mul/stage2_reg[7]/D
+                                7.61           7.65 f        -0.04  (VIOLATED)
+   u_native_div/stage2_reg[17]/D
+                                7.63           7.66 f        -0.03  (VIOLATED)
+   u_native_div/stage2_reg[0]/D
+                                7.63           7.64 r        -0.01  (VIOLATED)
+   u_native_div/stage2_reg[4]/D
+                                7.61           7.62 f        -0.01  (VIOLATED)
+   u_native_div/stage2_reg[14]/D
+                                7.63           7.63 f         0.00  (VIOLATED: increase significant digits)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   fpu_bf16_wrapper             0.00       274024416.00   -274024416.00
+                                                                    (VIOLATED)
+
+
+1

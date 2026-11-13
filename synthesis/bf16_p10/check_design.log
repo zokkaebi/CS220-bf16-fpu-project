@@ -1,0 +1,41 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP5-4
+Date:        Sun Nov  8 20:51:10 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              21
+    Cells do not drive (LINT-1)                                    21
+
+Nets                                                                3
+    Unloaded nets (LINT-2)                                          3
+--------------------------------------------------------------------------------
+
+Warning: In design 'bf16_addsub_pipeline', cell 'C998' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_addsub_pipeline', cell 'C1035' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_addsub_pipeline', cell 'B_51' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_addsub_pipeline', cell 'C1107' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_addsub_pipeline', cell 'C1111' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_addsub_pipeline', cell 'C1120' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_addsub_pipeline', cell 'C1183' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_addsub_pipeline', cell 'C1197' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_mul_comb', cell 'B_50' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_mul_comb', cell 'B_51' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_mul_comb', cell 'C951' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_mul_comb', cell 'C952' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_mul_comb', cell 'C959' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_mul_comb', cell 'C975' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_mul_comb', cell 'C1053' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_div_comb', cell 'B_48' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_div_comb', cell 'B_49' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_div_comb', cell 'C1041' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_div_comb', cell 'C1045' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_div_comb', cell 'C1049' does not drive any nets. (LINT-1)
+Warning: In design 'bf16_div_comb', cell 'C1120' does not drive any nets. (LINT-1)
+Warning: In design 'fpu_bf16_wrapper', net 'native_div_invalid' driven by pin 'u_native_div/invalid' has no loads. (LINT-2)
+Warning: In design 'fpu_bf16_wrapper', net 'native_mul_invalid' driven by pin 'u_native_mul/invalid' has no loads. (LINT-2)
+Warning: In design 'fpu_bf16_wrapper', net 'native_addsub_invalid' driven by pin 'u_native_addsub/invalid' has no loads. (LINT-2)
+1

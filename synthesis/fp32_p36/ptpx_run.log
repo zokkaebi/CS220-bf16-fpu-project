@@ -1,0 +1,120 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+              Version V-2023.12-SP5-4 for linux64 - Aug 07, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+# CS220 Team 5 - PrimeTime PX averaged power from gate-level simulation activity.
+# Flow from Section 6: netlist + SDC + matching .db + VCD from netlist simulation.
+#
+#   DESIGN=fp32 PERIOD=40 pt_shell -f power/ptpx.tcl   (from repo root)
+set REPO   [file normalize [file join [file dirname [info script]] ..]]
+/home/csgrad/uraj002/CS220-bf16-fpu-project
+set DESIGN [expr {[info exists env(DESIGN)] ? $env(DESIGN) : "fp32"}]
+fp32
+set PERIOD [expr {[info exists env(PERIOD)] ? $env(PERIOD) : 40}]
+36
+set SYN    "$REPO/synthesis/${DESIGN}_p${PERIOD}"
+/home/csgrad/uraj002/CS220-bf16-fpu-project/synthesis/fp32_p36
+set OUT    "$SYN/ptpx"
+/home/csgrad/uraj002/CS220-bf16-fpu-project/synthesis/fp32_p36/ptpx
+file mkdir $OUT
+if {$DESIGN eq "fp32"} { set TOP fpu; set TB test_fp32_baseline } else                   { set TOP fpu_bf16_wrapper; set TB test_bf16_streaming_golden }
+test_fp32_baseline
+set VCD "$REPO/sim/${DESIGN}_p${PERIOD}/netlist.vcd"
+/home/csgrad/uraj002/CS220-bf16-fpu-project/sim/fp32_p36/netlist.vcd
+set LIB "/usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p7v125c.db"
+/usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p7v125c.db
+set power_enable_analysis true
+Information: Checked out license 'PrimePower' (PT-019)
+true
+set power_analysis_mode averaged
+averaged
+set link_library [list "*" $LIB]
+* /usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p7v125c.db
+read_verilog "$SYN/${TOP}_netlist.v"
+1
+current_design $TOP
+Information: current_design won't return any data before link (DES-071)
+link_design $TOP
+Loading db file '/usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p7v125c.db'
+Loading verilog file '/home/csgrad/uraj002/CS220-bf16-fpu-project/synthesis/fp32_p36/fpu_netlist.v'
+Linking design fpu...
+Information: Removing 1 unneeded designs..... (LNK-034)
+Information: 214 (72.79%) library cells are unused in library saed32rvt_ss0p7v125c..... (LNK-045)
+Information: total 214 library cells are unused (LNK-046)
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+Design 'fpu' was successfully linked.
+Information: There are 49009 leaf cells, ports, hiers and 49608 nets in the design (LNK-047)
+1
+read_sdc "$SYN/${TOP}.sdc"
+
+Reading SDC version 2.1...
+1
+1
+read_vcd -strip_path "$TB/dut" $VCD
+Information: Reading file netlist.vcd to annotate toggle rates on the design...
+Information: Reading vcd file '/home/csgrad/uraj002/CS220-bf16-fpu-project/sim/fp32_p36/netlist.vcd'
+Information: Simulation Start Time : 0.000000 ns, Simulation End Time : 144126.338000 ns, Total Simulation Time : 144126.338000 ns
+
+======================================================================
+Summary:
+Total number of nets = 49498
+Number of annotated nets = 49498 (100.00%)
+Total number of leaf cells = 48897
+Number of fully annotated leaf cells = 48224 (98.62%)
+======================================================================
+
+Information: Total number of synthesis invariant points = 828 , annotated synthesis invariant points = 828, annotation_ratio = 100.00%
+1
+update_timing
+Information: Using automatic max wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+Information: Building multi voltage information for entire design. (MV-022)
+1
+update_power
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+1
+report_power                                  > "$OUT/power.log"
+report_power -hierarchy                       > "$OUT/power_hier.log"
+report_switching_activity -list_not_annotated > "$OUT/switching_not_annotated.log"
+report_timing                                 > "$OUT/timing_pt.log"
+puts "PTPX COMPLETE -> $OUT"
+PTPX COMPLETE -> /home/csgrad/uraj002/CS220-bf16-fpu-project/synthesis/fp32_p36/ptpx
+exit
+Information: Defining new variable 'PERIOD'. (CMD-041)
+Information: Defining new variable 'REPO'. (CMD-041)
+Information: Defining new variable 'TB'. (CMD-041)
+Information: Defining new variable 'DESIGN'. (CMD-041)
+Information: Defining new variable 'LIB'. (CMD-041)
+Information: Defining new variable 'OUT'. (CMD-041)
+Information: Defining new variable 'TOP'. (CMD-041)
+Information: Defining new variable 'SYN'. (CMD-041)
+Information: Defining new variable 'VCD'. (CMD-041)
+
+Timing updates: 1 (0 implicit, 1 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 2585.12 MB
+CPU usage for this session: 164 seconds 
+Elapsed time for this session: 163 seconds
+Diagnostics summary: 1 error, 2 warnings, 21 informationals
+
+Thank you for using pt_shell!

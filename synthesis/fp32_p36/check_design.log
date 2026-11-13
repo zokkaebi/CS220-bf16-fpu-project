@@ -1,0 +1,137 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP5-4
+Date:        Sun Nov  8 20:42:30 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     49
+    Unconnected ports (LINT-28)                                     3
+    Feedthrough (LINT-29)                                          46
+
+Cells                                                              41
+    Cells do not drive (LINT-1)                                    14
+    Connected to power or ground (LINT-32)                         26
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'fpu', cell 'B_56' does not drive any nets. (LINT-1)
+Warning: In design 'fpu', cell 'C1404' does not drive any nets. (LINT-1)
+Warning: In design 'fpu', cell 'C1408' does not drive any nets. (LINT-1)
+Warning: In design 'pre_norm', cell 'I_68' does not drive any nets. (LINT-1)
+Warning: In design 'pre_norm_fmul', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'pre_norm_fmul', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub27', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub27', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'post_norm', cell 'B_100' does not drive any nets. (LINT-1)
+Warning: In design 'post_norm', cell 'B_101' does not drive any nets. (LINT-1)
+Warning: In design 'post_norm', cell 'C3091' does not drive any nets. (LINT-1)
+Warning: In design 'post_norm', cell 'B_103' does not drive any nets. (LINT-1)
+Warning: In design 'post_norm', cell 'B_104' does not drive any nets. (LINT-1)
+Warning: In design 'post_norm', cell 'B_105' does not drive any nets. (LINT-1)
+Warning: In design 'except', port 'opa[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'except', port 'opb[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'post_norm', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'pre_norm_fmul', input port 'opa[22]' is connected directly to output port 'fracta[22]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[21]' is connected directly to output port 'fracta[21]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[20]' is connected directly to output port 'fracta[20]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[19]' is connected directly to output port 'fracta[19]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[18]' is connected directly to output port 'fracta[18]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[17]' is connected directly to output port 'fracta[17]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[16]' is connected directly to output port 'fracta[16]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[15]' is connected directly to output port 'fracta[15]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[14]' is connected directly to output port 'fracta[14]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[13]' is connected directly to output port 'fracta[13]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[12]' is connected directly to output port 'fracta[12]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[11]' is connected directly to output port 'fracta[11]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[10]' is connected directly to output port 'fracta[10]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[9]' is connected directly to output port 'fracta[9]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[8]' is connected directly to output port 'fracta[8]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[7]' is connected directly to output port 'fracta[7]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[6]' is connected directly to output port 'fracta[6]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[5]' is connected directly to output port 'fracta[5]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[4]' is connected directly to output port 'fracta[4]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[3]' is connected directly to output port 'fracta[3]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[2]' is connected directly to output port 'fracta[2]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[1]' is connected directly to output port 'fracta[1]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opa[0]' is connected directly to output port 'fracta[0]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[22]' is connected directly to output port 'fractb[22]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[21]' is connected directly to output port 'fractb[21]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[20]' is connected directly to output port 'fractb[20]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[19]' is connected directly to output port 'fractb[19]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[18]' is connected directly to output port 'fractb[18]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[17]' is connected directly to output port 'fractb[17]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[16]' is connected directly to output port 'fractb[16]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[15]' is connected directly to output port 'fractb[15]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[14]' is connected directly to output port 'fractb[14]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[13]' is connected directly to output port 'fractb[13]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[12]' is connected directly to output port 'fractb[12]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[11]' is connected directly to output port 'fractb[11]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[10]' is connected directly to output port 'fractb[10]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[9]' is connected directly to output port 'fractb[9]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[8]' is connected directly to output port 'fractb[8]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[7]' is connected directly to output port 'fractb[7]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[6]' is connected directly to output port 'fractb[6]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[5]' is connected directly to output port 'fractb[5]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[4]' is connected directly to output port 'fractb[4]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[3]' is connected directly to output port 'fractb[3]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[2]' is connected directly to output port 'fractb[2]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[1]' is connected directly to output port 'fractb[1]'. (LINT-29)
+Warning: In design 'pre_norm_fmul', input port 'opb[0]' is connected directly to output port 'fractb[0]'. (LINT-29)
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[25]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[24]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[23]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[22]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[21]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[20]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[19]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[18]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[17]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[16]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[15]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[14]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[13]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[12]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[11]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[10]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[9]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[8]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[7]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[6]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[5]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[4]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[3]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[2]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[1]' is connected to logic 0. 
+Warning: In design 'fpu', a pin on submodule 'u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opa[0]' is connected to logic 0. 
+Warning: In design 'fpu', the same net is connected to more than one pin on submodule 'u6'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'opa[25]', 'opa[24]'', 'opa[23]', 'opa[22]', 'opa[21]', 'opa[20]', 'opa[19]', 'opa[18]', 'opa[17]', 'opa[16]', 'opa[15]', 'opa[14]', 'opa[13]', 'opa[12]', 'opa[11]', 'opa[10]', 'opa[9]', 'opa[8]', 'opa[7]', 'opa[6]', 'opa[5]', 'opa[4]', 'opa[3]', 'opa[2]', 'opa[1]', 'opa[0]'.
+1

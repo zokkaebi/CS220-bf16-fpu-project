@@ -1,0 +1,92 @@
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	u4/U806/A2 u4/U806/Y u4/U807/A2 u4/U807/Y u4/U808/A2 u4/U808/Y u4/U824/A1 u4/U824/Y u4/U825/A u4/U825/Y u4/U73/A u4/U73/Y u4/U835/A1 u4/U835/Y u4/U57/A u4/U57/Y u4/U875/A3 u4/U875/Y u4/U899/A1 u4/U899/Y u4/U992/A1 u4/U992/Y u4/U1058/A1 u4/U1058/Y u4/U1086/A1 u4/U1086/Y u4/U1124/A1 u4/U1124/Y u4/U1149/A1 u4/U1149/Y u4/U1175/A1 u4/U1175/Y u4/U1205/A1 u4/U1205/Y u4/U1229/A1 u4/U1229/Y u4/U1251/A1 u4/U1251/Y u4/U1270/A1 u4/U1270/Y u4/U1288/A1 u4/U1288/Y u4/U1546/A1 u4/U1546/Y u4/U14/A u4/U14/Y u4/U1520/A2 u4/U1520/Y u4/U553/A1 u4/U553/Y u4/U556/A1 u4/U556/Y u4/U558/A1 u4/U558/Y u4/U650/A1 u4/U650/Y u4/U805/A1 u4/U805/Y 
+Information: Timing loop detected. (OPT-150)
+	u4/U77/A u4/U77/Y u4/U809/A2 u4/U809/Y u4/U810/A1 u4/U810/Y u4/U813/A2 u4/U813/Y u4/U818/A1 u4/U818/Y u4/U824/A2 u4/U824/Y u4/U825/A u4/U825/Y u4/U73/A u4/U73/Y u4/U835/A1 u4/U835/Y u4/U57/A u4/U57/Y u4/U875/A3 u4/U875/Y u4/U899/A1 u4/U899/Y u4/U992/A1 u4/U992/Y u4/U1058/A1 u4/U1058/Y u4/U1086/A1 u4/U1086/Y u4/U1124/A1 u4/U1124/Y u4/U1149/A1 u4/U1149/Y u4/U1175/A1 u4/U1175/Y u4/U1205/A1 u4/U1205/Y u4/U1229/A1 u4/U1229/Y u4/U1251/A1 u4/U1251/Y u4/U1270/A1 u4/U1270/Y u4/U1288/A1 u4/U1288/Y u4/U1546/A1 u4/U1546/Y u4/U14/A u4/U14/Y u4/U1520/A2 u4/U1520/Y u4/U553/A1 u4/U553/Y u4/U556/A1 u4/U556/Y u4/U558/A1 u4/U558/Y u4/U650/A1 u4/U650/Y u4/U805/A1 u4/U805/Y 
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'u4/U1520'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'u4/U1520'
+         to break a timing loop. (OPT-314)
+ 
+****************************************
+Report : qor
+Design : fpu
+Version: W-2024.09-SP5-4
+Date   : Sun Nov  8 21:21:55 2026
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:             211.00
+  Critical Path Length:         39.61
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     40.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:        110
+  Leaf Cell Count:              47382
+  Buf/Inv Cell Count:            9308
+  Buf Cell Count:                 196
+  Inv Cell Count:                9112
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     46727
+  Sequential Cell Count:          655
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   107519.430540
+  Noncombinational Area:  4259.961860
+  Buf/Inv Area:          12195.354045
+  Total Buffer Area:           447.55
+  Total Inverter Area:       11747.81
+  Macro/Black Box Area:      0.000000
+  Net Area:              45820.770232
+  -----------------------------------
+  Cell Area:            111779.392400
+  Design Area:          157600.162631
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         48014
+  Nets With Violations:             6
+  Max Trans Violations:             2
+  Max Cap Violations:               5
+  -----------------------------------
+
+
+  Hostname: bender.engr.ucr.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    7.64
+  Logic Optimization:               1484.50
+  Mapping Optimization:              402.59
+  -----------------------------------------
+  Overall Compile Time:             2273.24
+  Overall Compile Wall Clock Time:  2289.95
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

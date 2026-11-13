@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : fpu
+Version: W-2024.09-SP5-4
+Date   : Sun Nov  8 22:03:51 2026
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   exp_r[0]                     0.21           0.29          -0.09  (VIOLATED)
+       PIN :   exp_r_reg[0]/Q
+                                0.21           0.29          -0.09  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      1                  -0.09  
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   exp_r[0]                     8.00           9.79          -1.79  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      1                  -1.79  
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   fpu                          0.00       1693861632.00  -1693861632.00
+                                                                    (VIOLATED)
+
+
+1

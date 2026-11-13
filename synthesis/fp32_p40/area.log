@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : fpu
+Version: W-2024.09-SP5-4
+Date   : Sun Nov  8 21:21:55 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p7v125c (File: /usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p7v125c.db)
+
+Number of ports:                          220
+Number of nets:                         48122
+Number of cells:                        47386
+Number of combinational cells:          46727
+Number of sequential cells:               655
+Number of macros/black boxes:               0
+Number of buf/inv:                       9308
+Number of references:                      78
+
+Combinational area:             107519.430540
+Buf/Inv area:                    12195.354045
+Noncombinational area:            4259.961860
+Macro/Black Box area:                0.000000
+Net Interconnect area:           45820.770232
+
+Total cell area:                111779.392400
+Total area:                     157600.162631
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-  Black-
+                                  Total        Total    national     national   boxes   Design
+--------------------------------  -----------  -------  -----------  ---------  ------  ---------
+fpu                               111779.3924    100.0  103442.1983  4259.9619  0.0000  fpu
+u4                                  4077.2322      3.6    4077.2322     0.0000  0.0000  post_norm
+--------------------------------  -----------  -------  -----------  ---------  ------  ---------
+Total                                                   107519.4305  4259.9619  0.0000
+
+1

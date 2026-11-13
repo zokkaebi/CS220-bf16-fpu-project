@@ -221,8 +221,8 @@ def evaluate_accuracy(count, seed):
         # Relative error is only well-behaved when the true result is nonzero.
         relative = errors[np.abs(refs) > 1e-30] / np.abs(refs[np.abs(refs) > 1e-30])
         print(f"{name:4s} {len(refs):5d} {np.mean(errors):13.6g} {np.sqrt(np.mean(errors ** 2)):13.6g} "
-              f"{np.mean(relative):13.6g} {np.percentile(relative, 95):13.6g} "
-              f"{np.max(relative):13.6g} {double_rounds:7d}")
+            f"{np.mean(relative):13.6g} {np.percentile(relative, 95):13.6g} "
+            f"{np.max(relative):13.6g} {double_rounds:7d}")
 
 
 def main():

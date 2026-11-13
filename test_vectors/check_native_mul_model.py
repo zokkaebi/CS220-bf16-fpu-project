@@ -50,9 +50,9 @@ def native_mul_model(a, b, rmode):
 
     inexact = guard or sticky
     increment = ((guard and (sticky or (base & 1))) if rmode == 0 else
-                 False if rmode == 1 else
-                 (not sign and inexact) if rmode == 2 else
-                 (bool(sign) and inexact))
+                False if rmode == 1 else
+                (not sign and inexact) if rmode == 2 else
+                (bool(sign) and inexact))
     rounded = base + int(increment)
     beyond_max = e > 127 or (e == 127 and base == 255 and inexact)
     to_inf = rmode == 0 or (rmode == 2 and not sign) or (rmode == 3 and sign)
@@ -84,7 +84,7 @@ def main():
     for mode in range(4):
         cases = [(a, b) for a in boundary for b in boundary]
         cases += [(rng.randrange(0x10000), rng.randrange(0x10000))
-                  for _ in range(args.random_per_mode)]
+                for _ in range(args.random_per_mode)]
         for a, b in cases:
             tested += 1
             got = native_mul_model(a, b, mode)

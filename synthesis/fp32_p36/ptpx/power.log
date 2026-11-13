@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+Design : fpu
+Version: V-2023.12-SP5-4
+Date   : Sun Nov  8 23:03:13 2026
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           5.488e-05    0.0000    0.0000 5.488e-05 ( 0.84%)  i
+register                2.559e-05 3.363e-06 1.174e-04 1.464e-04 ( 2.25%)  
+combinational           3.642e-03 1.539e-03 1.116e-03 6.296e-03 (96.78%)  
+sequential              1.432e-06 1.213e-06 5.390e-06 8.036e-06 ( 0.12%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 1.543e-03   (23.72%)
+  Cell Internal Power  = 3.724e-03   (57.23%)
+  Cell Leakage Power   = 1.239e-03   (19.05%)
+                         ---------
+Total Power            = 6.506e-03  (100.00%)
+
+1
